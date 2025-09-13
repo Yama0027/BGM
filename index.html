@@ -1,29 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>BGM Player</title>
+    <title>BGMダウンロード</title>
 </head>
 <body>
 
-    <h1>BGMを再生する</h1>
-    <button id="playButton">再生/一時停止</button>
+    <h1>BGMをダウンロードする</h1>
 
-    <audio id="bgm" src="bgm.mp3" preload="auto"></audio>
-
-    <script>
-        const playButton = document.getElementById('playButton');
-        const bgm = document.getElementById('bgm');
-
-        playButton.addEventListener('click', () => {
-            if (bgm.paused) {
-                bgm.play();
-                playButton.textContent = '一時停止';
-            } else {
-                bgm.pause();
-                playButton.textContent = '再生';
-            }
-        });
-    </script>
+    <a href="bgm.mp3" download>
+        <button>ダウンロード</button>
+    </a>
 
 </body>
 </html>
